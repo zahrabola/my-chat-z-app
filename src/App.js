@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import Home from './Pages/Home';
 import Register from './Pages/Register';
 

@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+.f-Container{
+   background-color: #ffa7f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-wrapper{
+  background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.f-logo{
+  color: #8a5b8d;
+   font-weight: bold;
+     font-size: 24px;
+}
+.f-title{
+  font-size: 12px;
+  color: #8a5b8d;
+}
+ form {
+     display: flex;
+      flex-direction: column;
+      gap: 15px;}
+
+ input {
+      padding: 15px;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid #8a5b8d;
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+
+ button {
+        background-color: #df7bec;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+ label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #8da4f1;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+  img {
+          width: 32px;
+       
+        }
