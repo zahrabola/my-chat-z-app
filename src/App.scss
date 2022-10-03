@@ -129,9 +129,10 @@ p {
   }
   .user {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     margin-top: 20px;
    padding: 10px;
+    color: lightgray;
   }
    
 #nav-img {
@@ -142,4 +143,53 @@ p {
             object-fit: cover;
             padding: 5px;
           }
-           
+          
+.search {
+        border-bottom: 1px solid gray;
+   .searchform {
+          padding: 10px;
+
+    input {
+            background-color: transparent;
+            border: none;
+            color: white;
+            outline: none;
+       
+
+       &::placeholder {
+              color: lightgray;
+            }
+          }
+        }
+      }
+   .userchat {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #522d46;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .userchatinfo {
+          span {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 14px;
+            color: lightgray;
+          }
+        }
+      }
+       
