@@ -1,6 +1,21 @@
 .App {
   text-align: center;
 }
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
 .f-Container{
    background-color: #ffa7f2;
   height: 100vh;
@@ -62,3 +77,69 @@
           width: 32px;
        
         }
+p {
+      color: #8d5b80;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+.home{
+ background-color: #ffa7f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .h-container {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+    @include tablet {
+     width: 90%;
+    }
+  }
+  .sidebar{
+     flex: 1;
+     border-right:  1px solid #613c5a;
+      background-color: #613c5a;
+      position: relative;
+  }
+.navbar {
+   display: flex;
+        align-items: center;
+        background-color: #512d52;
+        height: 50px;
+        padding: 10px;
+        justify-content: space-between;
+        color: #ddddf7;
+}
+.nav-logo{
+  padding-top: 30px;
+    font-weight: bold;
+     color: #8a5b8d;
+          @include tablet {
+            display: none;
+          }
+}
+  .chat{
+    flex:2
+
+  }
+  .user {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+   padding: 10px;
+  }
+   
+#nav-img {
+            background-color: #ddddf7;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 5px;
+          }
+           
