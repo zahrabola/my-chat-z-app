@@ -1,7 +1,24 @@
 import React from "react";
-
+import Messages from "../Components/Messages";
+import  Input from "../Components/Input";
+import More from "../Images/more.png";
+import { FaPlusCircle,  FaVideoSlash } from "react-icons/fa";
 const Chat = () => {
-  return (<div className="chat"> Chat </div>)
+  return (
+    <div className="chat">
+      <div className="chatinfo">
+        <span> Bola</span>
+        <div className="chaticons">
+            <FaVideoSlash id="r-icon"/>
+          <FaPlusCircle id="r-icon"/>
+          <img src={More} alt="" />
+        </div>
+      </div>
+      <Messages />
+      <Input />
+      Chat{" "}
+    </div>
+  );
 };
 
 export default Chat;
