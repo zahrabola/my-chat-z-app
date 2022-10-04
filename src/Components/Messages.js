@@ -3,12 +3,20 @@ import Message from "./Message";
 
 const Messages = () => {
   return (
-    <div className="messages">
+    <div className="messages" id="scroll">
       <Message />
-      <Message /> 
+      <Message />
+      <Message />
+      <Message />
+      <Message />
+      <Message />
+      <Message />
+      <Message />
       <Message />
       <Message />
        <Message />
+      <Message />
+      <Message />
     </div>
   );};
 
