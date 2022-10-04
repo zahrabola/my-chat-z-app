@@ -59,3 +59,5 @@ const Register = () => {
 };
 export default Register;
 // 15. hidden file link
+///https://firebase.google.com/docs/storage/web/upload-files
+///https://console.firebase.google.com/u/0/project/chat-1bd3c/authentication/providers 
