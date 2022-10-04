@@ -11,7 +11,7 @@ const Chat = () => {
         <div className="chaticons">
             <FaVideoSlash id="r-icon"/>
           <FaPlusCircle id="r-icon"/>
-          <img src={More} alt="" />
+          <img src={More} alt="" id="ci-img" />
         </div>
       </div>
       <Messages />

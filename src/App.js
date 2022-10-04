@@ -1,14 +1,16 @@
+import React from "react";
 
-import './App.scss';
-import Home from './Pages/Home';
+import "./App.css";
+///import Home from "./Pages/Home";
 ///import Login from './Pages/Login';
-////import Register from './Pages/Register';
+import Register from './Pages/Register';
 
 function App() {
   return (
     <div className="App">
       Zahra
-      <Home />
+      home 
+      <Register />
     </div>
   );
 }
