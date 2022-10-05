@@ -9,10 +9,12 @@ import {
   uploadBytesResumable,
   getDownloadURL,
 } from "firebase/storage";
+import { useNavigate } from "react-router-dom";
 
 //////////////////////////////////////////
 const Register = () => {
   const [err, setErr] = useState(false);
+  const navigate = useNavigate ();
 
   const handleSubmit = async (event) => {
     event
@@ -22,7 +24,7 @@ const Register = () => {
     const displayName = event.target[0].value;
     const email = event.target[1].value;
     const password = event.target[2].value;
-    const file = event.target[3].file[0];
+    const file = event.target[3].files[0];
 
     ///const auth = getAuth();
     try {
@@ -67,7 +69,7 @@ const Register = () => {
                   });
                   
 await setDoc(doc(db, "userChats", res.user.uid), {});
-/*navigate("/")*/;
+navigate("/");
                 });
             }
           );
